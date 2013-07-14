@@ -1,0 +1,15 @@
+{
+  "string": "foo",
+  "numeric": 1234,
+  "nochange": "NOCHANGE",
+  "object": {
+    "key": "value"
+  },
+  "array": [
+      "item"
+  ],
+  "children": {
+    "boy": "boy",
+    "girl": "girl"
+  }
+}

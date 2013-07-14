@@ -1,0 +1,15 @@
+{
+  "string": "FOO",
+  "numeric": 5678,
+  "nocopy": "NOCOPY",
+  "object": {
+    "key": "VALUE"
+  },
+  "array": [
+      "ITEM"
+  ],
+  "children": {
+    "boy": "BOY",
+    "baby": "BABY"
+  }
+}

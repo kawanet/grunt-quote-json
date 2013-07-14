@@ -1,0 +1,31 @@
+{
+  "name": "grunt-quote-json",
+  "description": "Grunt contirb plugin to quote a part of JSON to another",
+  "version": "0.1.0",
+  "author": "https://github.com/kawanet",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/kawanet/grunt-quote-json.git"
+  },
+  "license": "MIT",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "grunt test"
+  },
+  "dependencies": {
+    "obop": "*"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-clean": "~0.4.0",
+    "grunt-contrib-copy": "~0.4.1",
+    "grunt-contrib-jshint": "~0.6.0",
+    "grunt-contrib-nodeunit": "~0.2.0"
+  },
+  "peerDependencies": {
+    "grunt": "~0.4.1"
+  },
+  "keywords": [
+    "gruntplugin"
+  ]
+}

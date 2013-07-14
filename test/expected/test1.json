@@ -1,0 +1,4 @@
+{
+  "name": "grunt-quote-json",
+  "description": "Grunt contirb plugin to quote a part of JSON to another"
+}
