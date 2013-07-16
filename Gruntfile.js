@@ -56,8 +56,8 @@ module.exports = function(grunt) {
             numeric: 1,
             object: 1,
             array: 1,
-            // "children.boy": 1,
-            // "children.baby": 1
+            "children.boy": 1,
+            "children.baby": 1
           }
         }
       }
@@ -85,5 +85,4 @@ module.exports = function(grunt) {
 
   // By default, lint and run all tests.
   grunt.registerTask('default', ['jshint', 'test']);
-
 };

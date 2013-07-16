@@ -54,8 +54,9 @@ function quoteJson(grunt, srcfile, dstfile, options) {
   if (!list.length) grunt.fatal('Invalid update fields: ' + JSON.stringify(fields));
 
   // read fields from source
-  var projector = obop.view(fields);
-  var $set = projector(srcdata);
+  // var projector = obop.view(fields);
+  // var $set = projector(srcdata);
+  var $set = view(srcdata, fields);
 
   // update fields to target
   var update = {
@@ -67,4 +68,24 @@ function quoteJson(grunt, srcfile, dstfile, options) {
   // write target JSON
   var outjson = JSON.stringify(outdata, null, spacer) + trailer;
   grunt.file.write(dstfile, outjson);
+}
+
+function view(src, fields) {
+  var out = {};
+  var undef;
+  Object.keys(fields).forEach(function(key) {
+    var val = get(src, key);
+    if (val === undef) val = "";
+    out[key] = val;
+  });
+  return out;
+}
+
+function get(src, key) {
+  if (!src || 'object' !== typeof src) src = {};
+  var pos = key.indexOf(".");
+  if (pos < 0) return src[key];
+  var pre = key.substr(0, pos);
+  var post = key.substr(pos + 1);
+  return get(src[pre], post);
 }

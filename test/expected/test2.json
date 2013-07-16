@@ -9,7 +9,8 @@
       "ITEM"
   ],
   "children": {
-    "boy": "boy",
-    "girl": "girl"
+    "boy": "BOY",
+    "girl": "girl",
+    "baby": "BABY"
   }
 }

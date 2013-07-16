@@ -13,7 +13,7 @@
     "test": "grunt test"
   },
   "dependencies": {
-    "obop": "*"
+    "obop": "~0.0.9"
   },
   "devDependencies": {
     "grunt": "~0.4.1",
