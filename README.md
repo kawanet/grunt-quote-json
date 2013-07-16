@@ -4,7 +4,7 @@ Grunt contirb plugin to quote a part of JSON to another
 
 ## Usage
 
-This task quotes a part of the source JSON file into the destination JSON file.
+This task copies a part of the source JSON file into the destination JSON file.
 
 Load `grunt-quote-json` module and install `quoteJson` task at your `Gruntfile.js`.
 
@@ -33,6 +33,8 @@ In the case above, it copies `name`, `version`, `description`
 and `repository` fields from `package.json` file to `bower.json` file.
 You don't need care the consistency of version number etc.
 between those JSON files with the plugin.
+
+Dot notation (e.g. `repository.url`) is supported to handle child nodes.
 
 ## INSTALLATION
 

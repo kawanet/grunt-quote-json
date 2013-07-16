@@ -1,8 +1,11 @@
 {
   "name": "grunt-quote-json",
   "description": "Grunt contirb plugin to quote a part of JSON to another",
-  "version": "0.1.0",
-  "author": "https://github.com/kawanet",
+  "version": "0.1.1",
+  "author": {
+    "name": "Yusuke Kawasaki",
+    "url": "http://gruntjs.com/"
+  },
   "repository": {
     "type": "git",
     "url": "git://github.com/kawanet/grunt-quote-json.git"
@@ -26,6 +29,7 @@
     "grunt": "~0.4.1"
   },
   "keywords": [
-    "gruntplugin"
+    "gruntplugin",
+    "json"
   ]
 }
