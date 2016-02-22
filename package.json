@@ -1,35 +1,37 @@
 {
   "name": "grunt-quote-json",
   "description": "Grunt contirb plugin to quote a part of JSON to another",
-  "version": "0.1.1",
-  "author": {
-    "name": "Yusuke Kawasaki",
-    "url": "http://gruntjs.com/"
+  "version": "0.1.2",
+  "author": "@kawanet",
+  "bugs": {
+    "url": "https://github.com/kawanet/grunt-quote-json/issues"
+  },
+  "dependencies": {
+    "obop": "^0.0.12"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-clean": "^1.0.0",
+    "grunt-contrib-copy": "^0.8.2",
+    "grunt-contrib-jshint": "^1.0.0",
+    "grunt-contrib-nodeunit": "^0.4.1"
+  },
+  "homepage": "https://github.com/kawanet/grunt-quote-json",
+  "keywords": [
+    "grunt",
+    "gruntplugin",
+    "json"
+  ],
+  "license": "MIT",
+  "main": "Gruntfile.js",
+  "peerDependencies": {
+    "grunt": ">=0.4.5"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/kawanet/grunt-quote-json.git"
+    "url": "https://github.com/kawanet/grunt-quote-json.git"
   },
-  "license": "MIT",
-  "main": "Gruntfile.js",
   "scripts": {
     "test": "grunt test"
-  },
-  "dependencies": {
-    "obop": "~0.0.9"
-  },
-  "devDependencies": {
-    "grunt": "~0.4.1",
-    "grunt-contrib-clean": "~0.4.0",
-    "grunt-contrib-copy": "~0.4.1",
-    "grunt-contrib-jshint": "~0.6.0",
-    "grunt-contrib-nodeunit": "~0.2.0"
-  },
-  "peerDependencies": {
-    "grunt": ">=0.4.0"
-  },
-  "keywords": [
-    "gruntplugin",
-    "json"
-  ]
+  }
 }
